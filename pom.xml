@@ -15,6 +15,7 @@
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
         <archetype.encoding>${encoding}</archetype.encoding>
+        <cucumber.version>1.2.5</cucumber.version>
         <joda-time.version>2.12.1</joda-time.version>
         <selenium.version>3.0.1</selenium.version>
     </properties>
