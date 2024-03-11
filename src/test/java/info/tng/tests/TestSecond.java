@@ -70,8 +70,7 @@ public class TestSecond {
     }
 
     @Test(groups = {"regression"})
-    public void test10()
-    {
+    public void test10() {
         System.out.println("****** This is test5 belongs to class TestSecond");
     }
 }

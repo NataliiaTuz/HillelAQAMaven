@@ -70,8 +70,7 @@ public class TestThird {
     }
 
     @Test(groups = {"smoke"})
-    public void test15()
-    {
+    public void test15() {
         System.out.println("****** This is test5 belongs to class TestThird");
     }
 }
