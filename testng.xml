@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="testFirst" thread-count="3">
+        <classes>
+            <class name="info.tng.tests.TestFirst">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="testSecond" parallel="methods">
+        <classes>
+            <class name="info.tng.tests.TestSecond">
+                <methods>
+                    <include name="test6"/>
+                    <include name="test7"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TestThird" thread-count="5">
+        <classes>
+            <class name="info.tng.tests.TestThird">
+                <methods>
+                    <include name="test11"/>
+                    <include name="test12"/>
+                    <include name="test13"/>
+                    <include name="test14"/>
+                    <include name="test15"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="byGroup">
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="info.tng.tests.TestFirst"></class>
+            <class name="info.tng.tests.TestSecond"></class>
+            <class name="info.tng.tests.TestThird"></class>
+        </classes>
+    </test>
+</suite>
