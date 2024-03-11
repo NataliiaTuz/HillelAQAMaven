@@ -43,9 +43,9 @@
             </run>
         </groups>
         <classes>
-            <class name="info.tng.tests.TestFirst"></class>
-            <class name="info.tng.tests.TestSecond"></class>
-            <class name="info.tng.tests.TestThird"></class>
+            <class name="info.tng.tests.TestFirst"/>
+            <class name="info.tng.tests.TestSecond"/>
+            <class name="info.tng.tests.TestThird"/>
         </classes>
     </test>
 </suite>
